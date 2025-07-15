@@ -1,8 +1,13 @@
 function getInputs() {
-  return {
-    id: document.getElementById("idInstance").value.trim(),
-    token: document.getElementById("apiTokenInstance").value.trim()
-  };
+  const id = document.getElementById("idInstance").value.trim();
+  const token = document.getElementById("apiTokenInstance").value.trim();
+
+  if (!id || !token) {
+    alert("Пожалуйста, введите idInstance и ApiTokenInstance.");
+    throw new Error("idInstance или ApiTokenInstance не указаны.");
+  }
+
+  return { id, token };
 }
 
 function showResponse(data) {
