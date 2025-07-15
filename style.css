@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  gap: 40px;
+}
+
+.left-panel {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.left-panel input,
+.left-panel textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.left-panel textarea {
+  height: 60px;
+  resize: none;
+}
+
+.left-panel button {
+  padding: 10px;
+  background-color: #e0e0e0;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.right-panel {
+  flex: 1;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  white-space: pre-wrap;
+}

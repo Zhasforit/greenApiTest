@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green API Tester</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <input id="idInstance" type="text" placeholder="idInstance" />
+      <input id="apiTokenInstance" type="text" placeholder="ApiTokenInstance" />
+
+      <button onclick="getSettings()">getSettings</button>
+      <button onclick="getStateInstance()">getStateInstance</button>
+
+      <input id="phoneNumber" type="text" placeholder="77771234567" />
+      <textarea id="messageText" placeholder="Hello World!"></textarea>
+      <button onclick="sendMessage()">sendMessage</button>
+
+      <input id="phoneNumberFile" type="text" placeholder="77771234567" />
+      <input id="fileUrl" type="text" placeholder="https://site.com/img.png" />
+      <button onclick="sendFileByUrl()">sendFileByUrl</button>
+    </div>
+
+    <div class="right-panel">
+      <p><strong>Ответ:</strong></p>
+      <pre id="responseField">{
+}</pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
